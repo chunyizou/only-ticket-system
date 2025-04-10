@@ -11,3 +11,8 @@ root.render(
     <AppWithRouter />
   </React.StrictMode>
 );
+// 导入Service Worker注册函数
+import { register } from './serviceWorkerRegistration';
+
+// 注册Service Worker
+register();
