@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack serve --open",
-    "build": "webpack --mode production",
+    "build": "node ./node_modules/webpack/bin/webpack.js --mode production",
     "server": "nodemon server.js",
-    "vercel-build": "webpack --mode production"
+    "vercel-build": "node build.js"
   },
   "dependencies": {
     "@zxing/library": "^0.21.3",
